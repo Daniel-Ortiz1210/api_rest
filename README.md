@@ -9,11 +9,11 @@ pip install -r /path/to/requirements.txt
 
 4. Inside the folder: api_rest/clients
 
-Run the following commands:
+    Run the following commands:
 
-python3 manage.py makemigrations
+    python3 manage.py makemigrations
 
-python3 manage.py migrate
+    python3 manage.py migrate
 
 5. Run python3 manage.py runserver
 
@@ -25,5 +25,5 @@ python3 manage.py migrate
 API ENDPOINTS:
 1. Get all registered clients and add a new client: http://127.0.0.1/api/clients/
 
-2. Obtains the details of a single client through its Primary Key:
+2. Obtains the detail and can update a single client through its Primary Key:
 http://127.0.0.1/api/clients/{pk}
