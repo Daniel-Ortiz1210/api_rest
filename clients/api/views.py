@@ -10,9 +10,6 @@ from rest_framework import status
 class ClientsView(APIView):
 
     def get(self, request):
-        '''
-        Return all the clients in the DB if not a pk is provided, in contrary case returns the client with the pk
-        '''
         clients = Client.objects.all()
         serializer = ClientsSerializer(clients, many=True)
         print(serializer.data)
